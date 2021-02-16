@@ -1,17 +1,25 @@
 import java.util.Scanner;
 public class Solution {
-	
-	public static int sum(int[] arr) {
+
+    public static int linearSearch(int arr[], int x) {
 		//Your code goes here
-        int sum=0;
-        for(int x:arr){
-            sum+=x;
-        }
-        return sum;
+        int k=0;
         
-	}
+        for (int i:arr){
+            if (i==x){
+                return k;
+                
+            }
+            k+=1;
+            
+        }
+        
+            return -1;
+        
+    }
     
-    public static void main(String args[]){
+    
+     public static void main(String args[]){
         Scanner s=new Scanner(System.in);
         int num=s.nextInt();
         for (int i=1;i<=num;i++){
@@ -21,8 +29,9 @@ public class Solution {
                 arr[i]=s.nextInt();
                 
             }
+            int find=s.nextInt();
             
-            sum(arr);
+            linearSearch(arr,find);
         }
     
     }
