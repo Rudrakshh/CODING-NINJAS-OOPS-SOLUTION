@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class Solution { 
+
+    public static int binarySearch(int[] arr, int x) {
+    	//Your code goes here
+       int c=0;
+		int ans=0;
+		int start=0;
+		int end=arr.length-1;
+		
+		while (start<=end) {
+			int mid=(start+end)/2;
+			if(arr[mid]==x) {
+				c+=1;
+				ans=mid;
+				break;
+			}
+			
+			else if(arr[mid]<x) {
+				start=mid+1;
+			}
+			else {
+				end=mid-1;
+			}
+		}
+		if(c==0) {
+			return -1;
+		}
+		else {
+			return ans;
+		}
+    }
+    
+   
+
+}
