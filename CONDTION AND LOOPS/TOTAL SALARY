@@ -1,0 +1,43 @@
+import java.util.Scanner;
+public class Main {
+	
+	public static void main(String[] args) {
+		// Write your code here
+        
+        int d;
+		Scanner s=new Scanner(System.in);
+		int salary = s.nextInt();
+		String grade=s.next();
+		char c=grade.charAt(0);
+		if (c==65) {
+			
+			d=1700;
+		}
+		
+		else if (c==66) {
+			
+			d=1500;
+		}
+		
+		else {
+			
+			d=1300;
+		}
+		
+		
+		
+		double hr= (salary*0.20);
+		double da=(salary*0.50);
+		double pr=(salary*0.11);
+		
+		
+		
+		double total=salary + hr+da-pr+d;
+		double answer=Math.round(total);
+		int v=(int)(answer);
+				
+		
+		System.out.print(v);
+
+	}
+}
