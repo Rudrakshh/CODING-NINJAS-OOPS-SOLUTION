@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		// Write your code here
+        
+        Scanner s= new Scanner(System.in);
+		int value=s.nextInt();
+		String ans=Integer.toString(value);
+		int len=ans.length();
+		
+		len-=1;
+		String pr="";
+		
+		for (int i=len;i>=0;i--) {
+			
+			char c=ans.charAt(i);
+			pr+=c;
+			
+		}
+		int fin=Integer.parseInt(pr);
+		System.out.print(fin);
+		
+		
+		
+	
+
+	}
+}
