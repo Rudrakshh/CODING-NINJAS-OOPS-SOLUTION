@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class Main {
+	
+	public static void main(String[] args) {
+		// Write your code here
+        
+        int result;
+	Scanner s= new Scanner(System.in);
+	int value=s.nextInt();
+	int choice=s.nextInt();
+	
+	if(choice==1) {
+        result=0;
+		for(int i=1;i<=value;i++) {
+			result+=i;
+		}
+	}
+	
+	else if(choice==2) {
+        result=1;
+		for(int i=1;i<=value;i++) {
+            
+			result*=i;
+		}
+	}
+	
+	else {
+		result=-1;
+	}
+	
+	System.out.print(result);
+	}
+}
