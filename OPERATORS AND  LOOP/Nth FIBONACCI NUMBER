@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Solution {
+
+
+	public static void main(String[] args) {
+		
+		/* Your class should be named Solution.
+	 	* Read input as specified in the question.
+	 	* Print output as specified in the question.
+		*/
+        
+        int c=0;
+		int a=-1;
+		int b=1;
+		Scanner s=new Scanner(System.in);
+		int value=s.nextInt();
+		
+		for(int i=1;i<=value+1;i++) {
+			c=a+b;
+			a=b;
+			b=c;
+			
+		}
+		
+		System.out.print(c);
+		
+	
+
+		
+	}
+
+}
