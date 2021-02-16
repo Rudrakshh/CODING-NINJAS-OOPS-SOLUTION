@@ -1,0 +1,30 @@
+import java.util.Scanner;
+import java.lang.Math;
+public class Main {
+	
+	public static void main(String[] args) {
+		// Write your code here
+        
+        int sum=0;
+		Scanner s=new Scanner(System.in);
+		int v=s.nextInt();
+		String str=Integer.toString(v);
+		int powe=0;
+		int len=str.length();
+		
+		
+		for(int i=len-1;i>=0;i--) {
+			
+			char c=str.charAt(i);
+			
+			int p=(int)Math.pow(2, powe);
+			if (c==49) {
+				sum+=p;
+			}
+			powe+=1;
+			
+		}
+		System.out.print(sum);
+
+	}
+}
