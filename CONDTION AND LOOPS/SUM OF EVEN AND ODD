@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Main {
+	
+	public static void main(String[] args) {
+		// Write your code here
+        int even, odd;
+		even=0;
+		odd=0;
+		Scanner s= new Scanner(System.in);
+		int digit=s.nextInt();
+		int num=digit;
+		while (num>0) {
+			int k=digit%10;
+			
+			if(k%2==0) {
+				
+				even+=k;
+			}
+			
+			else {
+				odd+=k;
+			}
+			
+			num=num/10;
+			digit=digit/10;
+		}
+		
+		System.out.print(even+" "+odd);
+        
+
+	}
+}
