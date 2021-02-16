@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Solution {
+	public static void main(String[] args) {
+		//Your code goes here
+        
+        Scanner s= new Scanner(System.in);
+		int v=s.nextInt();
+		String a="A";
+		
+		int k=1;
+		int m=k;
+		
+		
+		for(int i=v;i>=1;i--) {
+			char c=a.charAt(0);
+			k=m;
+			c+=i-1;
+			while (k>=1) {
+				System.out.print(c);
+				k--;
+				c+=1;
+			}
+			
+			System.out.print("\n");
+			m+=1;
+		}
+	}
+}
